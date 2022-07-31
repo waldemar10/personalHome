@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Waldemar Justus</title>
+    <link rel="stylesheet" href="css/styler.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="wj_Logo.jpg">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="menu display-flex center-content">
+        <nav>
+            <div class="menu-hide">
+                <a class="distance-menu" id="web1" href="#webdev">WebDev</a>
+                <a class="distance-menu" id="opengl1" href="#openGL/CV">OpenGL/CV</a>
+                <a class="distance-menu" id="javafx1" href="#javaFX">Java</a>
+            </div>
+            <div class="menu-responsive">
+                <div id="burger">
+                    <a><i class="fa fa-solid fa-bars" onclick="menuResponsive()"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="startscreen" class="display-flex vertical-flex center-content">
+        <div id="typingtext"></div>
+        <div id="typingtext2"></div>
+        <div class="star">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <h2>My Projects</h2>
+    <div class="arrow display-flex center-content vertical-flex">
+        <a class="arrow-background" href="#webdev"><i class="fa fa-solid fa-arrow-down"></i></a>
+    </div>
+    <hr id="webdev">
+    <div class="div-webdev">
+        <div class="h2-div center-content">
+            <h2 class="h2-ptitle">My first self-developed website</h2>
+        </div>
+        <div class="proj-design display-flex responsive-webdev center-content-responsive direction-responsive">
+            <div class="slider" id="id-slide">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <div class="slide first">
+                        <video controls>
+                            <source src="Logo_animation.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <video controls>
+                            <source src="Darkmode.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <video controls>
+                            <source src="Registration.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" onclick="sliderBtn1()" class="manual-btn" id="id1"></label>
+                    <label for="radio2" onclick="sliderBtn2()" class="manual-btn" id="id2"></label>
+                    <label for="radio3" onclick="sliderBtn3()" class="manual-btn" id="id3"></label>
+                </div>
+            </div>
+            <div class="vertical-flex">
+                <p class="flex-grow1 overall-text">
+                    The task was to develop a website for a fictitious company in the health industry.
+                    I chose Yoga here.
+                    <br>
+                    During the project I learned how to structure the process of web design and how to
+                    programm a website.
+                    <br>
+                    The website was programmed only with html, css and javascript.
+                    <br>
+                    <br>
+                </p>
+                <ul>
+                    <li>Logoanimation with css</li>
+                    <li>Dark/Lightmode switching with javascript.</li>
+                    <li>Registration for a yoga course with javascript.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--OpenGL/CV-->
+    <hr id="openGL/CV">
+    <div class="div-opengl">
+        <div class="h2-div center-content">
+            <h2 class="h2-ptitle">Project with OpenGL and OpenCV</h2>
+        </div>
+        <div class="proj-design display-flex  responsive-webdev center-content-responsive direction-responsive">
+            <div class="video-opengl">
+                <div>
+                    <video controls>
+                        <source src="B03Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <p class="flex-grow1 overall-text">
+                The goal was to program the game "Rock paper scissors" with OpenGL and OpenCV.
+                In this project I learned how to recognise hand gestures using image processing and the theory behind it.
+                <br>
+                I also learned basic OpenGL, with first modeling objects, lights, materials and
+                animations.
+                <br>
+                <br>
+                Programming language: Java
+            </p>
+            <ul>
+        </div>
+    </div>
+
+    <!--JavaFX-->
+    <hr id="javaFX">
+    <div class="div-javafx">
+        <div class="h2-div center-content">
+            <h2 class="h2-ptitle">Java Project</h2>
+        </div>
+        <div class="proj-design display-flex responsive-webdev center-content-responsive direction-responsive">
+            <div class="video-javafx">
+                <div>
+                    <video controls>
+                        <source src="javafx3.mp4">
+                    </video>
+                </div>
+            </div>
+            <p class="flex-grow1 overall-text">
+                This Java project was a digital movie library that uses various algorithms.
+                It refers to the different movie streaming providers, gives some information about the movie and allows
+                the customer to save this movie to his watch list.
+                This project includes binary search,
+                linear search, bubble sort and insertion sort.
+                The data was stored in .txt files that are personally created when a new user registers there.
+                <br>
+                <br>
+                An admin login allows access to the administration, where the admin can post new movies and revise old ones.
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
